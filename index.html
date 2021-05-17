@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/avara" type="text/css"/>
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/freeuniversal" type="text/css"/>
+        <title>Video Game Survey Form</title>
+<!--    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+    </head>
+    <body>
+        <main>
+            <h1 id="title">Video Game Survey Form</h1>
+            <p id="description">Thank you for taking this short survey about video games!<br>Please try to answer each question honestly</em></p>
+            <form id="survey-form" action="form-data.html">
+                <div class="form-class">
+                    <label class="info-label" id="name-label" for="name">Name:</label><br>
+                    <input 
+                        type="text"
+                        id="name"
+                        name="name"
+                        class="data-input"
+                        placeholder="Enter your name here"
+                        required
+                    /><br>
+                    <label class="info-label" id="email-label" for="email">Email address:</label><br>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        class="data-input"
+                        placeholder="Enter your email here"
+                        required
+                    /><br>
+                    <label class="info-label" id="number-label" for="age">Age: (optional)</label><br>
+                    <input
+                        type="number"
+                        id="number"
+                        name="number"
+                        class="data-input"
+                        placeholder="Enter your age here"
+                        min="1"
+                        max="99"
+                    />
+                </div>
+                <div class="form-class">
+                    <p>Which devices do you use to play video games? (Check all that apply)</p>
+                    <label>
+                        <input id="pc" type="checkbox" name="gaming-device" value="pc">PC
+                    </label>
+    
+                    <label>
+                        <input id="console" type="checkbox" name="gaming-device" value="console">Console
+                    </label>
+    
+                    <label>
+                        <input id="mobile" type="checkbox" name="gaming-device" value="mobile">Mobile
+                    </label>
+    
+                    <label>
+                        <input id="not-applicable" type="checkbox" name="gaming-device" value="not-applicable">Not applicable / I don't play video games
+                    </label>
+                </div>
+                <div class="form-class">
+                    <p>Of these devices, which do you use the most?</p>
+                    <label>
+                        <input id="fav-pc" type="radio" name="fav-gaming-device" value="fav-pc">PC
+                    </label>
+    
+                    <label>
+                        <input id="fav-console" type="radio" name="fav-gaming-device" value="fav-console">Console
+                    </label>
+    
+                    <label>
+                        <input id="fav-mobile" type="radio" name="fav-gaming-device" value="fav-mobile">Mobile
+                    </label>
+    
+                    <label>
+                        <input id="fav-not-applicable" type="radio" name="fav-gaming-device" value="fav-not-applicable">Not applicable / I don't play video games
+                    </label>
+                </div>
+                <div class="form-class">
+                    <label for="weekly-video-game-hours">How many hours a week do you play video games?</label>
+                    <select class="input-background" name="weekly-video-game-hours" id="dropdown">
+                        <option value="fourteen-or-more">14+</option>
+                        <option value="nine-to-thirteen">9-13</option>
+                        <option value="six-to-eight">6-8</option>
+                        <option value="three-to-five">3-5</option>
+                        <option value="one-to-two">1-2</option>
+                        <option value="hours-not-applicable">Not Applicable / I don't play video games</option>
+                    </select>
+                </div>
+                <div class="form-class">
+                    <label for="suggestions-area">Any other comments or suggestions that you would like to add?</label>
+                    <textarea class="input-background" id="suggestions-area" name="suggestions-area" rows="5" cols="50" placeholder="Please list any additional comments here..."></textarea>
+                </div>
+                <button id=submit type="submit">Submit</button>
+            </form>
+        </main>
+    </body>
+</html>
